@@ -1,6 +1,6 @@
 # RelayBot
 
-RelayBot relays messages between channels/rooms ('targets') on different chat platforms, currently supporting `Matrix` and `IRC`.
+RelayBot relays messages between channels/rooms ('`targets`') on different chat platforms, currently supporting `Matrix` and `IRC`.
 
 The bot can be configured to relay messages between targets in either a one-to-one or one-to-many relationship and is bi-directional.
 
