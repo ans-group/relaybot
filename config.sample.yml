@@ -1,0 +1,29 @@
+debug: true
+servers:
+  irc:
+    ukfastirc:
+      host: someircserver.com:8443
+      use_tls: true
+      skip_tls_verify: false
+      username: someircuser
+      password: somepassword
+      nick: RelayBot
+  matrix:
+    ukfastmatrix:
+      homeserver: https://somematrixserver.com
+      username: somematrixuser
+      password: somepassword
+      display_name: RelayBot
+mappings:
+- from: 
+    server: ukfastmatrix
+    name: "!abcdefb:somematrixserver.com"
+  to:
+    server: ukfastirc
+    name: "#general"
+- from:
+    server: ukfastirc
+    name: "#general"
+  to:
+    server: ukfastmatrix
+    name: "!abcdefb:somematrixserver.com"
